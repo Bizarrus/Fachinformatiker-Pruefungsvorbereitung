@@ -33,6 +33,7 @@ datei (Die Datei dessen Zugriffsrechte verändert werden sollen)
 | 4    | lesen
 | 5    | lesen/ausführen
 | 6    | lesen/schreiben
+| 7    | Vollzugriff
 
 ### Beispiel
 
