@@ -69,25 +69,50 @@ Schleifen werden in der Programmierung verwendet um einen Code zu **_wiederholen
 
 Eine for Schleife wird genutzt, wenn man weiß wie lange sich eine Schleife wiederholen soll.
 
+Die `for`-Schleife hat hier zwei Methodiken:
+- Das durchlaufen mit einer Bedinung (siehe Beispiel #1)
+- Das durchlaufen mit einer iterierbaren Liste (siehe Beispiel #2)
+
 Syntax:
 
 ```c
-for (Initialisierung; Bedingung; Aktualisierung)
+// Beispiel #1
+for (<Initialisierung>; <Bedingung>; <Aktualisierung>)
+{
+    // auszuführender Code
+}
+
+// Beispiel #2
+for (<type> <Eintrag> : <Liste>)
 {
     // auszuführender Code
 }
 ```
 
-Beispiel:
+Beispiel #1:
 
-Hier folgt ein Beispiel für die for Schleife. Das Beispiel gibt den Text "Hello World!" zehn mal in einer Konsole aus.
+Hier folgt ein Beispiel für die for Schleife mit Initialisierung, Aktualisierung und Bedingung, wann die Schleife beendet wird. Das Beispiel gibt den Text "Hello World!" zehn mal in einer Konsole aus.
 
 ```c
-for(int i=0; i<10; i++)
+for(int i = 0; i < 10; i++)
 {
     std::cout << "Hello World!" << std::endl; // "Hello World!" in der Konsole ausgeben und in die nächste Zeile gehen
 }
 ```
+
+Beispiel #2:
+
+Hier folgt ein Beispiel für die for Schleife mit iterierbaren Listen. Das Beispiel gibt den Text "Eintryg: n" anhand der Einträge in der Zahlenliste in einer Konsole aus.
+
+```c
+int myList[5] = {10, 20, 30, 40, 50};
+
+for (int i : myList)
+{
+    std::cout << "Eintrag: " << i << std::endl;
+}
+```
+
 
 ### while Schleife
 
